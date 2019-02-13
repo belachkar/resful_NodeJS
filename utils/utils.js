@@ -31,6 +31,10 @@ utils.isNumberNatural = (data) => {
 utils.isStringWithLength = (data, length) => {
   return utils.isString(data) && utils.hasLength(data.trim(), length);
 };
+
+utils.isStringLengthBetweenStrict = (data, minLength, maxLength) => {
+  return utils.isString(data) && data.trim().length > minLength && data.trim().length < maxLength;
+};
 utils.isBooleanTrue = (data) => {
   return utils.isBoolean(data) && data == true;
 };

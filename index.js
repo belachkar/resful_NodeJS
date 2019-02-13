@@ -9,6 +9,11 @@ const helpers = require('./lib/helpers');
 
 const { httpPort, httpsPort, envName } = require('./lib/config');
 
+// @TODO GET RID OF THIS
+helpers.sendTwilioSms('4158375340', 'Hello', (err) => {
+  console.log('This was the error', err);
+});
+
 const httpsSrvOptions = {
   key: fs.readFileSync('./https/key.pem'),
   cert: fs.readFileSync('./https/cert.pem'),

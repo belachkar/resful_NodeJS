@@ -4,7 +4,5 @@ module.exports = {
 		"node": true,
 		"browser": true,
 	},
-	"globals": {
-		'io': true,
-	},
+	"globals": {},
 };
